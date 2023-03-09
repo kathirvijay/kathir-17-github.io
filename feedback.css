@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap);
+*{
+    
+    padding: 0;
+   color: var(--font);
+font-family: 'Titillium Web', sans-serif;
+}
+
+:root {
+    --primary-color: #B58DB6;
+    --heading:#eba7ec;
+    --back:#E8D6CB;
+    --font:#77726f
+  }
+
+body{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--back);
+}
+.contain{
+    display:flex ;
+    justify-content: center;
+    align-content: center;
+
+}
+form{
+    background: var(--heading);  
+    padding: 20px;
+    display: flex;
+    flex-direction:column;
+    border-radius: 20px;
+}
+form *{
+    margin-top: 10px;
+}
+input{
+    height: 40px;
+    border: 2px solid #d99df5; 
+    border-radius: 5px;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+}
+
+#check{
+    display: flex;
+   flex-direction: row;
+   width: 500px;
+   height: 30px;
+   gap: 20px;
+   align-items: center;
+}
+
+#but{
+    border-radius: 5px ;
+    border: 2px solid orangered;
+    height: 50px;
+    font-size: larger;
+    font-weight: 700;
+    width: 100%;
+    
+}

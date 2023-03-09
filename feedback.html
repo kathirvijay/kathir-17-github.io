@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./feedback.js"></script>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <!-- <div class="content">
+        <table border="1" id="tableTogle" hidden >
+            <tr>
+                <th>name</th>
+                <th>ID</th>
+            </tr>
+            <tr>
+                <td>kathir</td>
+                <td>gmail.com</td>
+            </tr>
+            <tr>
+                <td>nandha</td>
+                <td>yahoo.com</td>
+            </tr>
+        </table>
+        <button data-toggle="tableTogle" >showTable</button>
+    </div> -->
+    <div class="contain">
+        <form name="feedback">
+            <div  >
+                <label for="name">User </label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required style="width:100%;">
+                <!-- <div  style="border: 2px solid rgba(255, 0, 0, 0.507);border-radius: 5px;padding-left: 10px;display: flex;"><div style="width: auto;">hi</div ><div style="width: 100%;" id="res"></div></div> -->
+            </div>
+            <div class="flex" id="radio-id">
+                <input type="radio" value="gendral feedback" name="radio" id="gendral feedback" >
+                <label for="name">gendral feedback</label>
+                    
+                <input type="radio" value="technical feedback" name="radio" id="technical feedback">
+                <label for="name">technical feedback</label>
+                    
+                <input type="radio" value="contrubition"  name="radio" id="contrubition">
+                <label for="name">contrubition</label>
+                    
+                
+            </div>
+            <div style="display: flex;align-items: center;">
+                <label for="email"></label>
+                <input type="text" id="email" name="email" placeholder="abx@gmail.com" style="width:100%;">
+                <div>
+                    <select name="select" id="select" style="height: 40px;margin-left: 10px;border-radius: 7px;">
+                        <option value="">--select country</option>
+                        <option value="IND">India</option>
+                        <option value="AUS">Australia</option>
+                        <option value="US">USA</option>
+                        <option value="EU">Europe</option>
+                        <option value="LKR">Sri Lanka</option>
+                    </select>
+                </div>
+          
+            </div>
+            <div>
+                
+                <textarea name="comments" id="comment"  rows="6" style="width:100%;"></textarea>
+            </div>
+
+            <div id="check"> 
+                  <input type="checkbox" id="terms" name="checkbox" value="notification"> 
+                  <label for="terms" class="lab">I notification terms and conditions... </label> 
+            </div>
+            <div>
+                <button name="btn" id="but">submit</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

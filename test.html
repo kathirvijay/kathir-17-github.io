@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./test.js"></script>
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div class="heading">
+        <h2>our input</h2>
+        <a href="./feedback.html" style="font-size:large; text-decoration: none;color: white; font-weight: bolder;margin-left: 5%;">feedback</a>
+    </div>
+    
+    <div class="content">
+        <div class="left" id="main">
+            <div class="left-top">
+                <form>
+                    <label for="item">Total Amount :</label>
+                    <input type="text" placeholder="Total Amount in Rs" name="name" id="totalamt">
+                   
+                   
+                <button onclick="aler()" type="button">press</button>
+                </form>
+            </div>
+            <div class="left-bottom">
+                <form id="myForm">
+                    <div id="get">
+                        <label for="item">List</label>
+                        <input type="text" placeholder="List of expence" id="item" name="name">
+                        <label for="amount">Price</label>
+                        <input type="number" placeholder="Enter amount in $" id="amount" name="name"
+                            onkeyup="success()">
+                        <button id="enter" type="button" onclick="sum()" disabled>Save</button>
+                    </div>
+                </form>
+            </div>
+            <!-- <div class="alert">
+                ✅<strong>Successful!</strong>
+                Amount Updated !!
+            </div> -->
+
+        </div>
+        <hr style="margin: 20px; border: 3px solid  #B58DB6;border-radius: 5px;">
+        <div class="right">
+            <div id="list-num" style="margin-left: 25px;"></div>
+            <ul style="list-style: none;" id="elements">
+                
+                    <!-- <li id="lists" onclick="removeItem(event)">tiffen  100    ❌</li>
+                    <li id="lists" onclick="removeItem(event)">dinner  100    ❌</li>
+                    <li id="lists" onclick="removeItem(event)">lunch  100    ❌</li> -->
+            
+            </ul>
+            <div id="imgs">
+                <img src="./1200x1200.gif" alt="load">
+            </div>
+            <button type="button" id="resync">resync </button>
+        </div>
+     
+        <hr style="margin: 20px; border: 3px solid  #B58DB6;border-radius: 5px;">
+        <div class="right-end">
+            <h1 id="amt">Amount :</h1>
+            <h3 id="val"></h3>
+            <hr style="margin: 20px; border: 3px solid  #B58DB6;border-radius: 5px;">
+            <h1>total amount remaining : $</h1>
+            <h1 id="ans"></h1>
+            <div class="elem" style="background-color: aquamarine;display: flex;justify-content:center;
+            align-items: center;" onclick="jbl()">Author : Kathiravan<p></p></div><button type="button" id="btn">btnaction</button>
+
+
+    </div>
+
+    </div>
+
+    <div class="ending">
+        <h1>Thank You !!! </h1>
+        <h1>Welcome back </h1>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
